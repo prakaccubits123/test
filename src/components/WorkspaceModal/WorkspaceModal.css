@@ -1,0 +1,194 @@
+:root {
+  --loaderColor: 'white';
+}
+
+.WorkspaceModal {
+  background: #0c0c0c;
+  min-height: 420px;
+  height: fit-content;
+  width: fit-content;
+  min-width: 280px;
+  border-radius: 14px;
+  border: 1px solid #1d1d1d;
+  padding: 20px;
+  position: absolute;
+  top: 20%;
+  /* visibility: hidden; */
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.1s ease;
+  pointer-events: auto;
+  z-index: 9;
+}
+
+.loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loader .ant-spin-dot-item {
+  background-color: var(--loaderColor);
+}
+
+.show {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  /* animation: animation 0.5s ease forwards; */
+}
+
+@keyframes animation {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  /* 50%{transform: scale(0.5);} */
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.WorkspaceModalTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.WorkspaceIconBox {
+  width: 31px;
+  height: 29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  /* position: relative; */
+}
+
+.WorkspaceIcon {
+  display: grid;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  width: 29px;
+  height: 29px;
+  background: #171718;
+  border-radius: 8px;
+}
+
+.WorkspaceSearchBar {
+  width: 100%;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  background: #1b1c1e;
+  mix-blend-mode: normal;
+  border: 1px solid #1d1d1d;
+  border-radius: 19.4937px;
+  justify-content: space-between;
+}
+
+.no-items {
+  width: 240px;
+  height: 36px;
+  align-items: center;
+  margin-top: 40px;
+  color: #c6c6c6;
+  text-align: center;
+  opacity: 0.2;
+}
+
+.WorkspaceSearchInput {
+  background: #1b1c1e;
+  border: none;
+  outline: none;
+  width: 155px;
+  height: 34px;
+  color: white;
+  margin-left: 10px;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.WorkspaceSearchInput::placeholder {
+  text-align: left;
+}
+
+.optionsModal {
+  position: absolute;
+  pointer-events: auto;
+  z-index: 10;
+}
+
+.docOptionsModal {
+  position: absolute;
+  top: 38%;
+  /* left: 260px; */
+  pointer-events: auto;
+  z-index: 10;
+}
+
+.handle,
+.drag {
+  cursor: grab;
+}
+
+.secondWorkspaceModal {
+  width: 200px;
+  height: 280px;
+  background: #0c0c0c;
+  border: 1px solid #1d1d1d;
+  border-radius: 14px;
+  padding: 15px;
+}
+
+.secondWorkspaceOptions {
+  height: 90%;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.secondWorkspaceOption {
+  display: flex;
+  width: 100%;
+  height: 30px;
+  color: white;
+  align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.secondWorkspaceOption:hover .secondWorkspaceRightArrow {
+  display: block;
+}
+
+.secondWorkspaceRightArrow {
+  position: absolute;
+  margin-left: 80%;
+  display: none;
+}
+
+.secondWorkspaceOptions .subMenu {
+  position: absolute;
+  left: 100%;
+  width: max-content;
+  background: #0c0c0c;
+  border: 1px solid #1d1d1d;
+  border-radius: 14px;
+  padding: 15px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  visibility: hidden;
+  transition: all 1s ease;
+}
+
+.secondWorkspaceOption:hover .subMenu {
+  visibility: visible;
+}

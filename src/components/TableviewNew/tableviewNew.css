@@ -1,0 +1,144 @@
+.tableContainer {
+    border: 0.5px dashed #2F2F2F;
+    border-radius: 12px;
+    margin: 0px 33px 0px 36px;
+}
+
+.tableParent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 60px;
+}
+
+.table {
+    border-radius: 6px;
+}
+
+.table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tr {
+    width: 100%;
+}
+
+.table td,
+.table th {
+    border: 1px solid #2F2F2F;
+    padding: 8px;
+    background: #28272C;
+}
+
+.table tr {
+    background: #28272C;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    /* width: 100%; */
+    height: 40px;
+}
+
+/* table tr:nth-child(even){background-color: #f2f2f2;} */
+table td:first-child {
+    background-color: #1B1C1E !important;
+    padding-left: 16px;
+}
+
+/* table td:first-child(3) {
+    margin-left: 15px;
+} */
+
+/* table tr:hover {background-color: #ddd;} */
+/* .firstCol1 {
+    text-align: right;
+    margin-left: 30px;
+} */
+
+.table th {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: -0.1px;
+    color: #BBBBBB;
+    padding: 12px;
+    background-color: #1B1C1E;
+    height: 41px;
+    text-align: left;
+}
+
+.firstCol {
+    text-align: center;
+}
+
+.rest {
+    /* padding-left: 20px; */
+}
+
+.titleInputtable {
+    background-color: rgba(217, 217, 217, 0.05);
+    border: none;
+    caret-color: #F9D45D;
+    color: #C6C6C6;
+    border-radius: 2px;
+    height: 20px;
+    outline: none;
+    font-weight: 400;
+    font-size: 14px;
+    width: 85px;
+    /* margin-left: 16px; */
+}
+
+.titleInputtable::placeholder {
+    color: #585A5B;
+    text-align: left;
+    opacity: 1;
+}
+
+.greenDot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #21A32E;
+    margin-right: 7px;
+}
+
+.yellowDot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #EFDC34;
+    margin-right: 7px;
+}
+
+.redDot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #EF3434;
+    margin-right: 7px;
+}
+
+.recText {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    color: #BBBBBB;
+    width: 65px;
+    height: 18px;
+    background: #3D4047;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
