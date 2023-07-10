@@ -47,7 +47,7 @@
     "start:renderer": "cross-env NODE_ENV=development TS_NODE_TRANSPILE_ONLY=true webpack serve --config ./.erb/configs/webpack.config.renderer.dev.ts",
     "test": "jest",
     "format": "cross-env NODE_ENV=development prettier --write --ignore-unknown .",
-    "commit": "git-cz"
+    "commit": "git add -A && cz"
   },
   "lint-staged": {
     "*": [
@@ -151,6 +151,7 @@
     "react-select": "^5.7.3",
     "react-table": "^7.8.0",
     "redux-persist": "^6.0.0",
+    "semantic-release-cli": "^5.4.4",
     "styled-components": "6.0.0-rc.1",
     "uuid": "^9.0.0"
   },
@@ -308,6 +309,11 @@
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && npx cz --hook || true"
     }
   }
 }
