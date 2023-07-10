@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './TaskViewBanban.css';
+import './TaskViewKanban.css';
 import { useSelector } from 'react-redux';
 import {
   ArrowIcon,
